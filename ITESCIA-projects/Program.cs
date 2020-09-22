@@ -47,6 +47,17 @@ namespace ITESCIA_projects
             ArticleType type = (ArticleType)Enum.Parse(typeof(ArticleType), Console.ReadLine().ToString(), true);
             var articleUser2 = new Article3(title2, price2, quantity2, type);
             articleUser2.Afficher();
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 4 :");
+            Article3[] articlesArray = new Article3[3];
+            articlesArray[0] = article4;
+            articlesArray[1] = article5;
+            articlesArray[2] = articleUser2;
+            for(int i = 0; i < articlesArray.Length; i++)
+            {
+                articlesArray[i].Afficher();
+            }
+
         }
     }
 }

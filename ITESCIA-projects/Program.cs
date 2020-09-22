@@ -1,7 +1,7 @@
 ﻿using System;
 using ITESCIA_projects.Exo1;
 using ITESCIA_projects.Exo2;
-
+using ITESCIA_projects.Exo3;
 namespace ITESCIA_projects
 {
     class Program
@@ -32,6 +32,21 @@ namespace ITESCIA_projects
             var articleUser = new Article2(title, price, quantity);
             articleUser.Afficher();
             Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3 :");
+            var article4 = new Article3("Raviolis", 3.99, 1, ArticleType.Alimentaire);
+            var article5 = new Article3("PS5", 499.99, 1, ArticleType.Loisir);
+            article4.Afficher();
+            article5.Afficher();
+            Console.WriteLine("Tapez le nom de l'article :");
+            string title2 = Console.ReadLine().ToString();
+            Console.WriteLine("Tapez le prix de l'article :");
+            double price2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Tapez la quantité de l'article :");
+            int quantity2 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Tapez le type de l'article (Alimentaire, Droguerie, Habillement, Loisir) :");
+            ArticleType type = (ArticleType)Enum.Parse(typeof(ArticleType), Console.ReadLine().ToString(), true);
+            var articleUser2 = new Article3(title, price, quantity, type);
+            articleUser2.Afficher();
         }
     }
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/ITESCIA-projects.csproj",
+      "projectUniqueName": "/Users/valentinstockman/projects/school projects/C#/ITESCIA-exercices/ITESCIA-projects/ITESCIA-projects.csproj",
       "projectName": "ITESCIA-projects",
-      "projectPath": "/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/ITESCIA-projects.csproj",
+      "projectPath": "/Users/valentinstockman/projects/school projects/C#/ITESCIA-exercices/ITESCIA-projects/ITESCIA-projects.csproj",
       "packagesPath": "/Users/valentinstockman/.nuget/packages/",
-      "outputPath": "/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/",
+      "outputPath": "/Users/valentinstockman/projects/school projects/C#/ITESCIA-exercices/ITESCIA-projects/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

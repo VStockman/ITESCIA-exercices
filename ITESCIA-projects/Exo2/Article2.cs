@@ -15,13 +15,13 @@ namespace ITESCIA_projects.Exo2
 
         public void Ajouter(int nombre)
         {
-            Quantite = Quantite + nombre;
+            Quantite += nombre;
             Console.WriteLine("Nouvelle quantité de " + Nom + " : " + Quantite);
         }
 
         public void Retirer(int nombre)
         {
-            Quantite = Quantite - nombre;
+            Quantite -= nombre;
             Console.WriteLine("Nouvelle quantité de " + Nom + " : " + Quantite);
         }
 

@@ -45,7 +45,7 @@ namespace ITESCIA_projects
             int quantity2 = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Tapez le type de l'article (Alimentaire, Droguerie, Habillement, Loisir) :");
             ArticleType type = (ArticleType)Enum.Parse(typeof(ArticleType), Console.ReadLine().ToString(), true);
-            var articleUser2 = new Article3(title, price, quantity, type);
+            var articleUser2 = new Article3(title2, price2, quantity2, type);
             articleUser2.Afficher();
         }
     }

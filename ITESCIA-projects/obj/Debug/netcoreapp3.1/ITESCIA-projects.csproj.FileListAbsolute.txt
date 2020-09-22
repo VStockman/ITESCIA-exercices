@@ -1,0 +1,12 @@
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.csprojAssemblyReference.cache
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.AssemblyInfoInputs.cache
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.AssemblyInfo.cs
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.csproj.CoreCompileInputs.cache
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/bin/Debug/netcoreapp3.1/ITESCIA-projects.deps.json
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/bin/Debug/netcoreapp3.1/ITESCIA-projects.runtimeconfig.json
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/bin/Debug/netcoreapp3.1/ITESCIA-projects.runtimeconfig.dev.json
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/bin/Debug/netcoreapp3.1/ITESCIA-projects.dll
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/bin/Debug/netcoreapp3.1/ITESCIA-projects.pdb
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.dll
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.pdb
+/Users/valentinstockman/projects/ITESCIA-projects/ITESCIA-projects/obj/Debug/netcoreapp3.1/ITESCIA-projects.genruntimeconfig.cache

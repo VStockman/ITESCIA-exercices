@@ -2,6 +2,8 @@
 using ITESCIA_projects.Exo1;
 using ITESCIA_projects.Exo2;
 using ITESCIA_projects.Exo3;
+using ITESCIA_projects.Exo5;
+
 namespace ITESCIA_projects
 {
     class Program
@@ -57,7 +59,13 @@ namespace ITESCIA_projects
             {
                 articlesArray[i].Afficher();
             }
-
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 5 :");
+            Personne personne = new Personne("Valentin", "Stockman", 25);
+            Personne personne1 = new Personne("Mickey", "Mouse", 35);
+            personne.Afficher();
+            personne1.Afficher();
+            personne.Combien();
         }
     }
 }

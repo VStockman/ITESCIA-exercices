@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{D63081AC-1BF9-40F6-A778-A391B86BCDB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ITESCIA-projects/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ITESCIA-projects/Exo4/Personne.cs">
     <Files>
       <File FileName="ITESCIA-projects/Program.cs" Line="52" Column="13" />
       <File FileName="ITESCIA-projects/Exo3/Article3.cs" />
+      <File FileName="ITESCIA-projects/Exo4/Personne.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ITESCIA-projects" expanded="True">
             <Node name="ITESCIA-projects" expanded="True">
-              <Node name="Exo3" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Exo4" expanded="True">
+                <Node name="Personne.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

@@ -197,6 +197,7 @@ namespace ITESCIA_projects
             listeArticle.Add(articleliste);
             listeArticle.Add(articleliste2);
             listeArticle.Add(articleliste3);
+            listeArticle.Add(articleliste4);
 
 
             List<Article> listeArticles2 = listeArticle.
@@ -205,6 +206,19 @@ namespace ITESCIA_projects
 
             foreach (Article val in listeArticle)
                 val.Acheter();
+
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3.5 :");
+
+            List<Article2> listeArticleNew = new List<Article2>();
+            listeArticleNew.Add(new Article2("video", 29.00, 1));
+            listeArticleNew.Add(new Article2("livre", 39.00, 2));
+            listeArticleNew.Add(new Article2("disque", 49.00, 3));
+
+
+            foreach (Article2 val in listeArticleNew)
+                GetArticlePriceAndQuantity(val.Nom);
+            
         }
 
         private static bool IsPrime(int unEntier)
@@ -227,6 +241,19 @@ namespace ITESCIA_projects
         public static bool IsLeapYear(int Year)
         {
             return (((Year & 3) == 0) && ((Year % 100 != 0) || (Year % 400 == 0)));
+        }
+
+        public static void GetArticlePriceAndQuantity(string nom)
+        {
+            List<Article2> listeArticle = new List<Article2>();
+            listeArticle.Add(new Article2("video", 29.00, 1));
+            listeArticle.Add(new Article2("livre", 39.00, 2));
+            listeArticle.Add(new Article2("disque", 49.00, 3));
+
+            foreach (Article2 article in listeArticle)
+                if (article.Nom == nom)
+                    Console.WriteLine($"Le prix de l'article est {article.Prix} et la quantité est {article.Quantite}");
+
         }
     }
 }

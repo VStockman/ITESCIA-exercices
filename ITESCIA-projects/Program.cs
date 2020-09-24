@@ -3,6 +3,7 @@ using ITESCIA_projects.Exo1;
 using ITESCIA_projects.Exo2;
 using ITESCIA_projects.Exo3;
 using ITESCIA_projects.Exo5;
+using ITESCIA_projects.Exo6;
 
 namespace ITESCIA_projects
 {
@@ -66,6 +67,31 @@ namespace ITESCIA_projects
             personne.Afficher();
             personne1.Afficher();
             personne.Combien();
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 6 :");
+            Employe e1 = new Employe("Valentin", "Stockman", 25, 3000);
+            Employe e2 = new Employe("Mickey", "Mouse", 35, 2000);
+            Employe e3 = new Employe("Employe", "Employe", 20, 1600);
+            Employe e4 = new Employe("Employe2", "Employe2", 30, 2400);
+
+            Chef c1 = new Chef("Chef 1", "nom Chef 1", 33, 3000, "Marketing");
+            Chef c2 = new Chef("Chef 2", "nom Chef 2", 30, 3200, "Informatique");
+            Directeur d = new Directeur("Jean", "Charles", 38, 4500, "R&D", "ITESCIA");
+            e1.Salaire = 5000;
+            c1.Service = "Comptabilite";
+            Personne2[] personnesArray = new Personne2[7];
+            personnesArray[0] = e1;
+            personnesArray[1] = e2;
+            personnesArray[2] = e3;
+            personnesArray[3] = e4;
+            personnesArray[4] = c1;
+            personnesArray[5] = c2;
+            personnesArray[6] = d;
+
+            for (int i = 0; i < personnesArray.Length; i++)
+            {
+                personnesArray[i].Afficher();
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ namespace ITESCIA_projects.Exo5
 
         public void Afficher()
         {
-            Console.WriteLine($"Nom de la personne : {Nom}, prénom de la personne : {Prenom}, age de la personne : ${Age}");
+            Console.WriteLine($"Nom de la personne : {Nom}, prénom de la personne : {Prenom}, age de la personne : {Age}");
         }
 
         public void Combien()

@@ -11,5 +11,6 @@
     <Folder Include="Exo2\" />
     <Folder Include="Exo3\" />
     <Folder Include="Exo5\" />
+    <Folder Include="Exo6\" />
   </ItemGroup>
 </Project>

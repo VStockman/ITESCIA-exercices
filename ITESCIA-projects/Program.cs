@@ -104,7 +104,7 @@ namespace ITESCIA_projects
             Chef chef2 = new Chef("Chef 2", "nom Chef 2", 30, 3200, "Informatique");
             Directeur directeur = new Directeur("Jean", "Charles", 38, 4500, "R&D", "ITESCIA");
 
-            Console.WriteLine("Insertion des éléments à la liste");
+            Console.WriteLine("Insertion des éléments à la liste : ");
 
             Liste personnes = new Liste();
             personnes.InsererDebut(directeur);
@@ -125,7 +125,7 @@ namespace ITESCIA_projects
             Console.WriteLine("Nombre d'éléments : {0}", personnes.NbElements);
             personnes.Lister();
 
-            Console.WriteLine("Avec insertion de fin");
+            Console.WriteLine("Avec insertion de fin :");
             personnes.InsererFin(employe1);
             personnes.InsererFin(employe2);
             personnes.InsererFin(employe3);
@@ -141,6 +141,17 @@ namespace ITESCIA_projects
             {
                 Console.WriteLine(personnes[i].Objet.ToString());
             }
+
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 8 :");
+            ListeEnumerator personnesEnumerator = new ListeEnumerator(personnes);
+            Console.WriteLine("Nombre d'éléments : {0}", personnes.NbElements);
+            Console.WriteLine("Avec enumerator :");
+            do
+            {
+                Console.WriteLine(personnesEnumerator.Current().ToString());
+            }
+            while (personnesEnumerator.MoveNext());
         }
     }
 }

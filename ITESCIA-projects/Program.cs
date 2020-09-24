@@ -175,6 +175,16 @@ namespace ITESCIA_projects
             foreach (int val in listAnneesBissextiles)
                 Console.WriteLine($"{val} ");
 
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3.3 :");
+            List<int> listeEntiers2 = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            List<int> listEntiersDivisiblesPar5 = listeEntiers2.
+                                                Where(valeur => valeur % 5 == 0)
+                                                .ToList();
+
+            foreach (int val in listEntiersDivisiblesPar5)
+                Console.WriteLine($"{val} ");
+
         }
 
         private static bool IsPrime(int unEntier)

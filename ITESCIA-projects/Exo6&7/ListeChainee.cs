@@ -7,28 +7,26 @@ namespace ITESCIA_projects.Exo6
     class Liste
     {
         private Element _Debut;
-        private readonly Element[] arr = new Element[100];
+        private readonly List<Element> list = new List<Element>();
 
         public void RemplirTableau()
         {
             Element debut = _Debut;
             if (debut != null)
             {
-                int i = 0;
-                arr[i] = debut;
+                list.Add(debut);
                 while (debut.Suivant != null)
                 {
                     debut = debut.Suivant;
-                    i++;
-                    arr[i] = debut;
+                    list.Add(debut);
                 }
             }
         }
 
         public Element this[int i]
         {
-            get => arr[i];
-            set => arr[i] = value;
+            get => list[i];
+            set => list[i] = value;
         }
 
         public int NbElements { get; private set; }

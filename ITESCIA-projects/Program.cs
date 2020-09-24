@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using ITESCIA_projects.Exo1;
 using ITESCIA_projects.Exo2;
 using ITESCIA_projects.Exo3;
@@ -11,15 +13,15 @@ namespace ITESCIA_projects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Exo 1 :");
-             var article = new Article("video", 29.00);
-             var disque = new Disque("Les Enfoirés", "Disque", 19.99);
-            var  video = new Video(23.54, "Video", 39.99);
+            Console.WriteLine("Exo 1.1 :");
+            var article = new Article("video", 29.00);
+            var disque = new Disque("Les Enfoirés", "Disque", 19.99);
+            var video = new Video(23.54, "Video", 39.99);
             article.Acheter();
             disque.Ecouter();
             video.Afficher();
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 2 :");
+            Console.WriteLine("Exo 1.2 :");
             var article2 = new Article2("Manga", 19.99, 2);
             var article3 = new Article2("La reine des neiges", 29.99, 1);
             article2.Afficher();
@@ -35,7 +37,7 @@ namespace ITESCIA_projects
             var articleUser = new Article2(title, price, quantity);
             articleUser.Afficher();
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 3 :");
+            Console.WriteLine("Exo 1.3 :");
             var article4 = new Article3("Raviolis", 3.99, 1, ArticleType.Alimentaire);
             var article5 = new Article3("PS5", 499.99, 1, ArticleType.Loisir);
             article4.Afficher();
@@ -51,24 +53,24 @@ namespace ITESCIA_projects
             var articleUser2 = new Article3(title2, price2, quantity2, type);
             articleUser2.Afficher();
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 4 :");
+            Console.WriteLine("Exo 1.4 :");
             Article3[] articlesArray = new Article3[3];
             articlesArray[0] = article4;
             articlesArray[1] = article5;
             articlesArray[2] = articleUser2;
-            for(int i = 0; i < articlesArray.Length; i++)
+            for (int i = 0; i < articlesArray.Length; i++)
             {
                 articlesArray[i].Afficher();
             }
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 5 :");
+            Console.WriteLine("Exo 2.1 :");
             Personne personne = new Personne("Valentin", "Stockman", 25);
             Personne personne1 = new Personne("Mickey", "Mouse", 35);
             personne.Afficher();
             personne1.Afficher();
             personne.Combien();
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 6 :");
+            Console.WriteLine("Exo 2.2 :");
             Employe e1 = new Employe("Valentin", "Stockman", 25, 3000);
             Employe e2 = new Employe("Mickey", "Mouse", 35, 2000);
             Employe e3 = new Employe("Employe", "Employe", 20, 1600);
@@ -94,7 +96,7 @@ namespace ITESCIA_projects
             }
 
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 7 :");
+            Console.WriteLine("Exo 2.3 :");
             Employe employe1 = new Employe("Valentin", "Stockman", 25, 3000);
             Employe employe2 = new Employe("Mickey", "Mouse", 35, 2000);
             Employe employe3 = new Employe("Employe", "Employe", 20, 1600); ;
@@ -143,7 +145,7 @@ namespace ITESCIA_projects
             }
 
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("Exo 8 :");
+            Console.WriteLine("Exo 2.4 :");
             ListeEnumerator personnesEnumerator = new ListeEnumerator(personnes);
             Console.WriteLine("Nombre d'éléments : {0}", personnes.NbElements);
             Console.WriteLine("Avec enumerator :");
@@ -152,6 +154,34 @@ namespace ITESCIA_projects
                 Console.WriteLine(personnesEnumerator.Current().ToString());
             }
             while (personnesEnumerator.MoveNext());
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3.1 :");
+            List<int> listeEntiers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            List<int> listEntiersPremiers = (from unEntier in listeEntiers
+                                             where IsPrime(unEntier)
+                                             select unEntier).ToList();
+
+            foreach (int val in listEntiersPremiers)
+                Console.WriteLine($"{val} ");
+
+
+        }
+
+        private static bool IsPrime(int unEntier)
+        {
+            {
+                if (unEntier <= 1) return false;
+                if (unEntier == 2) return true;
+                if (unEntier % 2 == 0) return false;
+
+                var boundary = (int)Math.Floor(Math.Sqrt(unEntier));
+
+                for (int i = 3; i <= boundary; i += 2)
+                    if (unEntier % i == 0)
+                        return false;
+
+                return true;
+            }
         }
     }
 }

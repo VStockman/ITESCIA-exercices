@@ -185,6 +185,26 @@ namespace ITESCIA_projects
             foreach (int val in listEntiersDivisiblesPar5)
                 Console.WriteLine($"{val} ");
 
+
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3.4 :");
+            var articleliste = new Article("video", 29.00);
+            var articleliste2 = new Article("livre", 39.00);
+            var articleliste3 = new Article("disque", 49.00);
+            var articleliste4 = new Article("video", 19.00);
+
+            List<Article> listeArticle = new List<Article>();
+            listeArticle.Add(articleliste);
+            listeArticle.Add(articleliste2);
+            listeArticle.Add(articleliste3);
+
+
+            List<Article> listeArticles2 = listeArticle.
+                                                Where(valeur => valeur.MonPrix < 5)
+                                                .ToList();
+
+            foreach (Article val in listeArticle)
+                val.Acheter();
         }
 
         private static bool IsPrime(int unEntier)

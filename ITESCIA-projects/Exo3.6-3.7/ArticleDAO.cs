@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using ITESCIA_projects.Exo2;
 
 namespace ITESCIA_projects.Exo3
@@ -35,6 +36,16 @@ namespace ITESCIA_projects.Exo3
             int price = myarticle.Quantite;
             double quantity = myarticle.Prix;
             return new Tuple<int, double>(price, quantity);
+        }
+
+        public string GetArticlesMinMaxAndAverage()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine($"Nombre d'articles: {Articles.Count}");
+            result.AppendLine($"Article qui a la plus petite quantité : {Articles.Min(art => art.Quantite)}");
+            result.AppendLine($"Article qui a la plus grosse quantité : {Articles.Max(art => art.Quantite)}");
+            result.AppendLine($"Prix moyen d'un article : {Articles.Average(art => art.Prix)}");
+            return result.ToString();
         }
 
         public List<Article2> GetArticles()

@@ -218,7 +218,22 @@ namespace ITESCIA_projects
 
             foreach (Article2 val in listeArticleNew)
                 GetArticlePriceAndQuantity(val.Nom);
-            
+
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Exo 3.6 :");
+
+            List<Article2> articlesList = new List<Article2>();
+
+            articlesList.Add(new Article2("Livre de cuisine", 4.99, 2));
+            articlesList.Add(new Article2("Ordinateur portable", 4.99, 2));
+            articlesList.Add(new Article2("DVD", 4.99, 2));
+
+            ArticleDAO dao = new ArticleDAO(articlesList);
+            string articleName = "Livre de cuisine";
+            int quantity5 = dao.GetArticleQuantityPriceByName(articleName).Item1;
+            double price5 = dao.GetArticleQuantityPriceByName(articleName).Item2;
+
+            Console.WriteLine($"There are {quantity5} articles by the name of {articleName} and their price is {price5}");
         }
 
         private static bool IsPrime(int unEntier)

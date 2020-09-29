@@ -16,6 +16,8 @@ namespace ITESCIA_projects.Exo1
             set { Prix = value; }
         }
 
+        public int Price { get; internal set; }
+
         public Article(string Designation, double Prix) { this.MaDesignation = Designation; this.MonPrix = Prix; }
         public void Acheter()
         {
